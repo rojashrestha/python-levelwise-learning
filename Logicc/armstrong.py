@@ -1,4 +1,4 @@
-#armstrong is a narcissistic number 
+ #armstrong is a narcissistic number 
 #if sum of the digit ^ number of digit = digit itself
 
 num=int(input("enter the number:"))
@@ -18,4 +18,21 @@ else:
     print(num, "is not an armstrong number")
 
 
+#armstrong 
 
+
+num=int(input("enter the number:"))
+sum=0
+temp=num
+digits=len(str(num))
+
+while temp > 0:
+    digit=temp%10
+    sum+= digit ** digits
+    temp = temp // 10
+
+if sum == num:
+    print(num,"is an armstrong number")
+
+else:
+    print(num," is not an armstrong number")
